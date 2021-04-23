@@ -1,11 +1,16 @@
 import React from "react";
 import art from "../../images/art1.png";
 import ProfilePic from "../../images/userImg.png"
+import cross from "../../images/cross.png";
+import heart from "../../images/heartFill.png";
+import upload from "../../images/upload.png";
+import more from "../../images/more.png";
+import FavoriteOutlinedIcon from '@material-ui/icons/FavoriteOutlined';
 
 const Art = () => {
     return(
         <>
-            <div className="artBox d-flex justify-content-between " style={{marginTop: "96px" , marginBottom: "96px"}}>
+            <div className="artBox d-flex justify-content-between " style={{marginTop: "96px" , marginBottom: "96px", position: "relative"}}>
                 <div style={{position: "relative"}}>
                     <div className="d-flex" style={{position: "absolute" , top: "20px", left: "20px"}}>
                         <div role="button" className="artTag mr-3">ART</div>
@@ -154,7 +159,20 @@ const Art = () => {
                             </div>
                     </div>
                 </div>
-                
+                <div style={{position: "absolute", right: "56px"}}>
+                    <div className="sideBtn mb-3" style={{background: "#23262F"}}>
+                        <img src={cross}  />
+                    </div>
+                    <div className="sideBtn mb-3" style={{border: "1px solid #E6E8EC"}}>
+                        <img src={upload} />
+                    </div>
+                    <div className="sideBtn mb-3" style={{border: "1px solid #E6E8EC",}}>
+                        <FavoriteOutlinedIcon style={{color: "#EF466F"}} />
+                    </div>
+                    <div className="sideBtn" style={{border: "1px solid #E6E8EC"}}>
+                                <img src={more} />
+                    </div>
+                </div>
             </div>
         </>
     );

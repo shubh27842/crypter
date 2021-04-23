@@ -378,7 +378,17 @@ tbody{
   text-align: center;
   color: #23262F;
 }
+.sideBtn{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px;
+width: 48px;
+height: 48px;
+border-radius: 48px;
 
+}
 @media screen and (max-width: 1024px) {
   .learnMore{
     width: 336px;
