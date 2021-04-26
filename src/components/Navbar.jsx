@@ -2,19 +2,21 @@ import React from "react";
 import logo from "../images/logo.svg";
 import SearchIcon from "@material-ui/icons/Search";
 import Bell from "../images/bell.png";
-import ProfilePic from "../images/userImg.png"
+import ProfilePic from "../images/userImg.png";
+import DragHandleRoundedIcon from '@material-ui/icons/DragHandleRounded';
 
 
 const Navbar = () => {
     return(
         <>
-            <nav className="w-100 container-fluid navbar navbar-expand-lg " style={{  height: "81px", borderBottom: "1px solid #E6E8EC"}}>
-                <div className="margin-10 navbarContent d-flex  " style={{width: "100%", height: "81px"}}>
+            <nav className="w-100 container-fluid navbar navbar-expand-lg  " style={{   borderBottom: "1px solid #E6E8EC"}}>
+                <div className="margin-10 navbarContent d-flex flex-row justify-content-around   mb-0 ">
                     <div className=" d-inline-flex " style={{position: "relative" }}>
                         <img src={logo} alt="logo" className="" id="logoD"/>
                         <p className="logoTxt  ">crypter</p>
                     </div>
-                    <div className=" d-lg-inline-flex d-none align-items-center  ml-4 mr-auto justify-content-between" style={{width: "170px",height: "81px"}}>
+                    <div className="my-auto divider" style={{height: "40px", width: "2px", background: "#E6E8EC",borderRadius: "2px"}} ></div>
+                    <div className="nonTabNav  ml-4 mr-auto" >
                         <li className="nav-item navItem">
                             Discover
                         </li>
@@ -36,8 +38,9 @@ const Navbar = () => {
                     <div className="user  my-auto">
                         <img src={ProfilePic} alt="profile" className="profilePic" />
                         <p className="userId my-auto">7.00698<span className="ml-1" style={{color: "#45B36B"}}>ETH</span></p>
-
                     </div>
+                    <DragHandleRoundedIcon className="d-sm-none d-block  d-flex align-items-center ml-3" style={{transform: "scale(1.5,2)",color: "#777E90",marginTop: "28px"}} />
+
                 </div>
             </nav>
         </>

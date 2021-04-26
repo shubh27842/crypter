@@ -1,5 +1,5 @@
 import React from "react";
-import art from "../../images/art1.png";
+import art from "../../images/Item2.png";
 import ProfilePic from "../../images/userImg.png"
 import cross from "../../images/cross.png";
 import upload from "../../images/upload.png";
@@ -12,10 +12,7 @@ import crossCircle from "../../images/crossCircle.png";
 import crossFilled from "../../images/crossFilled.png";
 import report from "../../images/report.svg";
 
-
-
-
-const Art = () => {
+const Item2 = () => {
 
     const showMore = (e) => {
         document.getElementsByClassName('moreBox')[0].classList.toggle('showMore');
@@ -30,43 +27,6 @@ const Art = () => {
                         <div role="button" className="unlockTag">UNLOCKABLE</div>
                     </div>
                     <img src={art} className="artImg " alt="product"  />
-                    <div className="sideBtnBox" >
-                        <div className="sideBtn sideBtnCross mb-3" style={{background: "#23262F"}}>
-                            <img src={cross} alt="remove" />
-                        </div>
-                        <div className="sideBtn mb-3" style={{border: "1px solid #E6E8EC"}}>
-                            <img src={upload} alt="remove" />
-                        </div>
-                        <div className="sideBtn mb-3" style={{border: "1px solid #E6E8EC",}}>
-                            <FavoriteOutlinedIcon style={{color: "#EF466F"}} />
-                        </div>
-                        <div className="sideBtn" onClick={showMore} id role="button" style={{border: "1px solid #E6E8EC"}}>
-                                    <img src={more} alt="more" />
-                        </div>
-                    </div>
-                    <div className="moreBox ">
-                        <div className="d-flex align-items-center  " style={{paddingBottom: "14px", width: "100%" ,borderBottom: "1px solid #E6E8EC"}}>
-                            <img src={dollar} alt="dollar" width="17px" height="17px" className="" />
-                            <p className="ml-2  my-auto">Change price</p>
-                        </div>
-                        <div className="d-flex align-items-center " style={{paddingBottom: "14px", width: "100%" ,borderBottom: "1px solid #E6E8EC"}}>
-                            <img src={arrowTransfer} alt="dollar" width="17px" height="17px" className="" />
-                            <p className="ml-2  my-auto">Transfer token</p>
-                        </div>
-                        <div className="d-flex align-items-center " style={{paddingBottom: "14px", width: "100%" ,borderBottom: "1px solid #E6E8EC"}}>
-                            <img src={crossCircle} alt="dollar" width="17px" height="17px" className="" />
-                            <p className="ml-2  my-auto">Remove from sale</p>
-                        </div>
-                        <div className="d-flex align-items-center " style={{paddingBottom: "14px", width: "100%" ,borderBottom: "1px solid #E6E8EC", color: "#EF466F"}}>
-                            <img src={crossFilled} alt="dollar" width="17px" height="17px" className="" style={{color: "#EF466F!important"}} />
-                            <p className="ml-2  my-auto">Burn token</p>
-                        </div>
-                        <div className="d-flex align-items-center " style={{paddingBottom: "14px", width: "100%" ,}}>
-                            <img src={report} alt="dollar" width="17px" height="17px" className="" />
-                            <p className="ml-2  my-auto">Report</p>
-                        </div>
-                    
-                </div>
                 </div>
                 <div className="rightBox ">
                     <div style={{marginBottom: "40px"}}>
@@ -75,7 +35,7 @@ const Art = () => {
                             lineHeight: "48px",
                             letterSpacing: "-0.01em",
                             color: "#23262F",
-                        }}>The amazing art</p>
+                        }}>Awesome work</p>
                         <div className="d-flex align-items-center ">
                             <span className="artRating">2.5 ETH</span>
                             <span className="artPrice mx-2">$4,429.87</span>
@@ -118,7 +78,7 @@ const Art = () => {
                             color: "#777E91",
                         }}>Bids</div>
                     </div>
-                    <div className="ownerInfo ">
+                    <div className="ownerInfo">
                         <img src={ProfilePic} alt="avatar" style={{
                             borderRadius: "50%",
                             width: "48px",
@@ -129,7 +89,7 @@ const Art = () => {
                             top: "28px",
                             right: "17px",
                         }} />
-                        <div className=" d-inline-block ml-0">
+                        <div className=" d-inline-block ml-2">
                             <p className="learnMore d-inline-block m-0" id="learnMoreMobile" style={{
                                 fontSize: "16px",
                                 lineHeight: "24px",
@@ -148,7 +108,7 @@ const Art = () => {
                             width: "48px",
                             height: "48px"
                         }}  />
-                        <div className=" d-inline-block ml-4">
+                        <div className=" d-inline-block ml-2">
                             <p className="learnMore d-inline-block m-0" id="learnMoreMobile" style={{
                                 fontSize: "16px",
                                 lineHeight: "24px",
@@ -161,7 +121,7 @@ const Art = () => {
                             }}>Selina Mayert</p>
                         </div>
                     </div>
-                    <div className="amountBox">
+                    <div className="amountBoxItem2">
                             <div className="d-inline-flex " style={{
                                 width: "100%",
                                 paddingBottom: "5px"
@@ -188,22 +148,51 @@ const Art = () => {
                                 </div>
                             </div>
                             <div className="d-flex ">
-                                    <div className="purchaseBtn mr-2">Purchase Now</div>
-                                    <div className="bidBtn">Place a bid</div>
-                            </div>
-                            <div className="" style={{height: "26px"}}>
-                                <pre className="learnMore  " style={{
-                                   
-                                    fontSize: "14px",
-                                }}>Service fee  <span style={{color: "#23262F"}}> 1.5% </span> 2.563 ETH   $4,540.62</pre>
+                                    <div className="bidBtn mr-2">View all</div>
+                                    <div className="purchaseBtn ">Accept</div>
                             </div>
                     </div>
                 </div>
-               
-                
+                <div className="sideBtnBox" >
+                    <div className="sideBtn sideBtnCross mb-3" style={{background: "#23262F"}}>
+                        <img src={cross} alt="remove" />
+                    </div>
+                    <div className="sideBtn mb-3" style={{border: "1px solid #E6E8EC"}}>
+                        <img src={upload} alt="upload" />
+                    </div>
+                    <div className="sideBtn mb-3" style={{border: "1px solid #E6E8EC",}}>
+                        <FavoriteOutlinedIcon style={{color: "#EF466F"}}  />
+                    </div>
+                    <div className="sideBtn" onClick={showMore} style={{border: "1px solid #E6E8EC"}}>
+                                <img src={more} alt="more" />
+                    </div>
+                </div>
+                <div className="moreBox ">
+                        <div className="d-flex align-items-center  " style={{paddingBottom: "14px", width: "100%" ,borderBottom: "1px solid #E6E8EC"}}>
+                            <img src={dollar} alt="dollar" width="17px" height="17px" className="" />
+                            <p className="ml-2  my-auto">Change price</p>
+                        </div>
+                        <div className="d-flex align-items-center " style={{paddingBottom: "14px", width: "100%" ,borderBottom: "1px solid #E6E8EC"}}>
+                            <img src={arrowTransfer} alt="dollar" width="17px" height="17px" className="" />
+                            <p className="ml-2  my-auto">Transfer token</p>
+                        </div>
+                        <div className="d-flex align-items-center " style={{paddingBottom: "14px", width: "100%" ,borderBottom: "1px solid #E6E8EC"}}>
+                            <img src={crossCircle} alt="dollar" width="17px" height="17px" className="" />
+                            <p className="ml-2  my-auto">Remove from sale</p>
+                        </div>
+                        <div className="d-flex align-items-center " style={{paddingBottom: "14px", width: "100%" ,borderBottom: "1px solid #E6E8EC", color: "#EF466F"}}>
+                            <img src={crossFilled} alt="dollar" width="17px" height="17px" className="" style={{color: "#EF466F!important"}} />
+                            <p className="ml-2  my-auto">Burn token</p>
+                        </div>
+                        <div className="d-flex align-items-center " style={{paddingBottom: "14px", width: "100%" ,}}>
+                            <img src={report} alt="dollar" width="17px" height="17px" className="" />
+                            <p className="ml-2  my-auto">Report</p>
+                        </div>
+                    
+                </div>
             </div>
         </>
     );
 };
 
-export default Art;
+export default Item2;

@@ -6,6 +6,13 @@
   padding-left: 10%;
   padding-right: 10%;
 }
+.navbar{
+  height: 81px;
+}
+.navbarContent{
+  width: 100%;
+  height: 81px;
+}
 #logoD{
   position: relative;
   top: -14px;
@@ -112,21 +119,38 @@
   text-align: center;
   color: #23262F;
 }
+.nonTabNav{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 170px;
+  height: 81px;
+}
 @media screen and (max-width: 1024px){
-  .navbarContent{
-    position: relative;
-    top: -7px;
+  .divider{
+    display: none;
+  }
+  .nonTabNav{
+    display: none;
   }
   .margin-10{
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 7%;
+    margin-right: 7%;
   }
   .padding-10{
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 7%;
+    padding-right: 7%;
   }
 }
 @media screen and (max-width: 480px){
+  .navbar{
+    height: 112px;
+    border-bottom: none!important;
+  }
+  .navbarContent{
+    position: relative;
+    bottom: -18px;
+  }
   .margin-10{
     margin-left: 5%;
     margin-right: 5%;
@@ -134,6 +158,24 @@
   .padding-10{
     padding-left: 5%;
     padding-right: 5%;
+  }
+  .searchBox{
+    display: none;
+  }
+  .uploadBtn{
+    display: none;
+  }
+  .user{
+    width: 40px;
+    padding: 4px;
+    border: none;
+  }
+  .userId{
+    display: none;
+  }
+  .notificationBell{
+    margin-right: 15px;
+    margin-left: 0px;
   }
 }
 
@@ -145,6 +187,12 @@
   position: relative;
   bottom: 0px;
 }
+.footerLogo{
+  margin-top: 46px;
+}
+.footer2, .footer3{
+  margin-top: 70px;
+}
 .footerText1{
   width: 256px;
   font-family: Poppins;
@@ -155,7 +203,7 @@
   letter-spacing: -0.01em;
   color: #23262F;
 }
-thead {
+.footer3 thead {
   width: 260px;
   font-family: Poppins;
   font-style: normal;
@@ -164,13 +212,14 @@ thead {
   line-height: 24px;
   color: #23262F;
 }
-tbody{
+.footer tbody{
   font-family: "DM Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   color: #777E91;
+  margin-bottom: 50px;
 }
 .footerText2{
   margin-top: 35px;
@@ -205,6 +254,13 @@ tbody{
   top: 31px;
   right: 10px;
 }
+.footer2{
+  width: 320px;
+}
+.footerTable{
+  width: 130px;
+  height: 190px;
+}
 @media screen and (max-width: 1024px) {
   .footerText1{
     font-size: 16px;
@@ -217,6 +273,45 @@ tbody{
   .footerEmailInput{
     width: 304px;
   }
+  
+}
+@media screen and (max-width: 480px) {
+  .footer{
+    background: #FCFCFD;
+    z-index: inherit;
+  }
+    .footerLogo{
+      margin-top: 30px;
+      height: 96px;
+      margin-bottom: 0;
+    }
+    .footer1{
+      border-bottom: 1px solid #E6E8EC;
+    }
+    .footer2, .footer3{
+      margin-top: 38px;
+    }
+    .footer3 th{
+     
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .footerText1{
+      margin-bottom: 32px;
+      margin-top: 0;
+    }
+    
+    .footerEmailInput{
+      width: 311px;
+    }
+    .footerInputBox , .footerText2{
+      width: 311px;
+    }
+    .footerTable{
+      width: 100%;
+      border-bottom: 1px solid #E6E8EC;
+    }
+    
 }
 
 
@@ -224,6 +319,8 @@ tbody{
 .artBox{
   padding-left: 10%;
   padding-right: 10%;
+  margin-top: 96px;
+  margin-bottom: 96px;
 }
 .artImg{
   width: 640px;
@@ -266,6 +363,12 @@ tbody{
   text-transform: uppercase;
   color: #FCFCFD;
 
+}
+.rightBox{
+  width: 384px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: bold;
 }
 .artRating{
   display: flex;
@@ -339,7 +442,7 @@ tbody{
   background: #FCFCFD;
   border: 1px solid #E6E8EC;
   box-sizing: border-box;
-  box-shadow: 0px 64px 64px -48px rgba(31, 47, 70, 0.12);
+  box-shadow: 0px 64px 64px -18px rgba(31, 47, 70, 0.12);
   border-radius: 16px;
 }
 .purchaseBtn{
@@ -389,16 +492,410 @@ height: 48px;
 border-radius: 48px;
 
 }
+.ownerInfo{
+  display: inline-flex;
+  width: 384px;
+  border-bottom: 1px solid #E6E8EC;
+  padding-bottom: 5px;
+}
+.sideBtnBox{
+  position: absolute;
+  top: 0;
+  left: 83vw;
+}
+.amountBoxItem2{
+  margin-top: 155px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px;
+  width: 384px;
+  height: 184px;
+  background: #FCFCFD;
+  border: 1px solid #E6E8EC;
+  box-sizing: border-box;
+  box-shadow: 0px 64px 64px -18px rgba(31, 47, 70, 0.12);
+  border-radius: 16px;
+}
+.amountBoxItem3{
+  margin-top: 163px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px;
+  width: 384px;
+  height: 176px;
+  background: #FCFCFD;
+  border: 1px solid #E6E8EC;
+  box-sizing: border-box;
+  box-shadow: 0px 64px 64px -18px rgba(31, 47, 70, 0.12);
+  border-radius: 16px;
+}
+.amountBoxItem3Text{
+  margin-top: auto;
+  width: 288px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777E91;
+
+}
+
+.moreBox{
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  width: 197px;
+  height: 280px;
+  top: 260px;
+  left: 74vw;
+  background: #FCFCFD;
+  box-shadow: 0px 16px 64px 2px rgba(31, 47, 70, 0.3);
+  border-radius: 12px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #777E91;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.showMore{
+  display: flex;
+}
+
 @media screen and (max-width: 1024px) {
+  .BtnBackground{
+    background: #23262F;
+  }
+  .moreBox{
+    width: 208px;
+    box-shadow: none;
+    top: 390px;
+    left: 29%;
+  }
+  .sideBtnCross{
+    display: none;
+  }
+  .sideBtnBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8px;
+    top: 88%;
+    left: 29%;
+    width: 208px;
+    height: 64px;
+    background: #FCFCFD;
+    box-shadow: 0px 40px 32px -24px rgba(15, 15, 15, 0.12);
+    border-radius: 64px;
+  }
   .learnMore{
     width: 336px;
     margin-bottom: 46px;
   }
   .artBox{
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 7%;
+    padding-right: 7%;
   }
-  .artImg{
+  .artImg {
     width: 496px;
   }
+  .rightBox, .infoBox, .ownerInfo, .amountBox, .amountBoxItem2, .amountBoxItem3{
+    width: 336px;
+  }
+  .purchaseBtn, .bidBtn{
+    width: 140px;
+    padding: 16px 15px;
+  }
 }
+@media screen and (max-width: 480px){
+  .moreBox{
+    width: 295px;
+    height: 316px;
+    top: 8px;
+    left: 2.5%;
+  }
+  .sideBtnBox{
+    top: 332px;
+    left: 17%;
+  }
+  .artBox{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 17px;
+    margin-top: 64px;
+  }
+  .rightBox{
+    margin-top: 32px;
+  }
+  .artImg{
+    width: 311px;
+    height: 420px;
+    
+  }
+  .learnMore{
+    width: 311px;
+    margin-bottom: 40px;
+  }
+  #learnMoreMobile{
+    width: 220px;
+  }
+  #learnMoreMobile1{
+    width: 250px!important;
+  }
+  .rightBox, .infoBox, .ownerInfo{
+    width: 311px;
+  }
+  .amountBox{
+    width: 343px;
+    height: 224px;
+    margin-top: 38px;
+    position: relative;
+    left: -5%;
+  }
+  .amountBoxItem2{
+    width: 343px;
+    height: 168px;
+    margin-top: 38px;
+    position: relative;
+    left: -5%;
+  }
+  .amountBoxItem3{
+    width: 343px;
+    height: 160px;
+    margin-top: 38px;
+    position: relative;
+    left: -5%;
+  }
+
+}
+
+
+
+/*   Edit Profile  */
+
+
+
+.backBtn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  width: 158px;
+  height: 40px;
+  border: 2px solid #E6E8EC;
+  box-sizing: border-box;
+  border-radius: 90px;
+  background: #FCFCFD;
+
+}
+.profileText1{
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #23262F;
+}
+.editProfileTopBox{
+  width: 736px;
+  height: 96px;
+  margin-top: 80px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.profileText2{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777E91;
+}
+.editProfileBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 736px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 64px;
+  margin-bottom: 136px;
+}
+.profileBox{
+  width: 352px;
+  display: flex;
+}
+
+.updateProfileBox{
+  display: flex;
+  flex-direction: column;
+  width: 352px;
+}
+.accountAndSocial{
+
+}
+.editProfilePic{
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+}
+.displayTab{
+  display: none;
+}
+.displayMobile{
+  display: none;
+}
+.profileLabelText3{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #B1B5C4;
+}
+.editProfileInput{
+  border: 2px solid #E6E8EC;
+  box-sizing: border-box;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 16px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777E91;
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 32px;
+}
+.socialBox{
+  margin-top: 40px;
+}
+.updateBtns{
+  display: flex;
+}
+.updateBtnBox{
+  margin-top: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .displayTab{
+    display: inline;
+  }
+  .displayDesktop{
+    display: none;
+  }
+  .editProfileTopBox{
+    margin-top: 64px;
+   margin-right: auto;
+   margin-left: 7%;
+  }
+  .profileBox{
+    width: 100%;
+    display: inline-flex;
+  }
+  .editProfileBox{
+    width: 100%;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .updateProfileBox{
+    width: 100%;
+    margin-top: 64px;
+  }
+  .accountAndSocial{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .accountBox{
+    display: inline-flex;
+    flex-direction: column;
+    width: 412px;
+    margin-right: 42px;
+  
+  }
+  .socialBox{
+    display: inline-flex;
+    flex-direction: column;
+    width: 412px;
+    margin-top: 0;
+  }
+  
+  .updateBtnBox{
+    margin-top: 64px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .editProfileTopBox{
+    margin-top: 32px;
+    width: 90%;
+    height: 160px;
+    padding-right: 0%;
+    margin-left: 5%;
+  }
+  .displayMobile{
+    display: block;
+  }
+  .editProfileTopBoxMobile{
+    width: 311px;
+  }
+  .updateProfileBox{
+    margin-top: 32px;
+  }
+  .editProfileBox{
+    width: 100%;
+    margin-bottom: 60px;
+    margin-top: 32px;
+    
+  }
+  .editProfilePic{
+    width: 64px;
+    height: 64px;
+  }
+  .accountAndSocial{
+    flex-direction: column;
+  }
+  .accountAndSocial{
+    flex-direction: column;
+  }
+  .accountBox{
+    display: block;
+    width: 100%;
+  }
+  .socialBox{
+    display: block;
+    width: 100%;
+    margin-top: 32px;
+  }
+  .updateBtns{
+    flex-direction: column;
+    align-items: center;
+  }
+  .updateProfileBtn{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .updateBtnBox{
+    margin-top: 32px;
+  }
+}
+
+
