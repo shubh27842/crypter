@@ -27,6 +27,43 @@ const Item2 = () => {
                         <div role="button" className="unlockTag">UNLOCKABLE</div>
                     </div>
                     <img src={art} className="artImg " alt="product"  />
+                    <div className="sideBtnBox" >
+                    <div className="sideBtn sideBtnCross mb-3" style={{background: "#23262F"}}>
+                        <img src={cross} alt="remove" />
+                    </div>
+                    <div className="sideBtn mb-3" style={{border: "1px solid #E6E8EC"}}>
+                        <img src={upload} alt="upload" />
+                    </div>
+                    <div className="sideBtn mb-3" style={{border: "1px solid #E6E8EC",}}>
+                        <FavoriteOutlinedIcon style={{color: "#EF466F"}}  />
+                    </div>
+                    <div className="sideBtn" onClick={showMore} style={{border: "1px solid #E6E8EC"}}>
+                                <img src={more} alt="more" />
+                    </div>
+                </div>
+                    <div className="moreBox ">
+                        <div className="d-flex align-items-center  " style={{paddingBottom: "14px", width: "100%" ,borderBottom: "1px solid #E6E8EC"}}>
+                            <img src={dollar} alt="dollar" width="17px" height="17px" className="" />
+                            <p className="ml-2  my-auto">Change price</p>
+                        </div>
+                        <div className="d-flex align-items-center " style={{paddingBottom: "14px", width: "100%" ,borderBottom: "1px solid #E6E8EC"}}>
+                            <img src={arrowTransfer} alt="dollar" width="17px" height="17px" className="" />
+                            <p className="ml-2  my-auto">Transfer token</p>
+                        </div>
+                        <div className="d-flex align-items-center " style={{paddingBottom: "14px", width: "100%" ,borderBottom: "1px solid #E6E8EC"}}>
+                            <img src={crossCircle} alt="dollar" width="17px" height="17px" className="" />
+                            <p className="ml-2  my-auto">Remove from sale</p>
+                        </div>
+                        <div className="d-flex align-items-center " style={{paddingBottom: "14px", width: "100%" ,borderBottom: "1px solid #E6E8EC", color: "#EF466F"}}>
+                            <img src={crossFilled} alt="dollar" width="17px" height="17px" className="" style={{color: "#EF466F!important"}} />
+                            <p className="ml-2  my-auto">Burn token</p>
+                        </div>
+                        <div className="d-flex align-items-center " style={{paddingBottom: "14px", width: "100%" ,}}>
+                            <img src={report} alt="dollar" width="17px" height="17px" className="" />
+                            <p className="ml-2  my-auto">Report</p>
+                        </div>
+                    
+                </div>
                 </div>
                 <div className="rightBox ">
                     <div style={{marginBottom: "40px"}}>
@@ -153,43 +190,7 @@ const Item2 = () => {
                             </div>
                     </div>
                 </div>
-                <div className="sideBtnBox" >
-                    <div className="sideBtn sideBtnCross mb-3" style={{background: "#23262F"}}>
-                        <img src={cross} alt="remove" />
-                    </div>
-                    <div className="sideBtn mb-3" style={{border: "1px solid #E6E8EC"}}>
-                        <img src={upload} alt="upload" />
-                    </div>
-                    <div className="sideBtn mb-3" style={{border: "1px solid #E6E8EC",}}>
-                        <FavoriteOutlinedIcon style={{color: "#EF466F"}}  />
-                    </div>
-                    <div className="sideBtn" onClick={showMore} style={{border: "1px solid #E6E8EC"}}>
-                                <img src={more} alt="more" />
-                    </div>
-                </div>
-                <div className="moreBox ">
-                        <div className="d-flex align-items-center  " style={{paddingBottom: "14px", width: "100%" ,borderBottom: "1px solid #E6E8EC"}}>
-                            <img src={dollar} alt="dollar" width="17px" height="17px" className="" />
-                            <p className="ml-2  my-auto">Change price</p>
-                        </div>
-                        <div className="d-flex align-items-center " style={{paddingBottom: "14px", width: "100%" ,borderBottom: "1px solid #E6E8EC"}}>
-                            <img src={arrowTransfer} alt="dollar" width="17px" height="17px" className="" />
-                            <p className="ml-2  my-auto">Transfer token</p>
-                        </div>
-                        <div className="d-flex align-items-center " style={{paddingBottom: "14px", width: "100%" ,borderBottom: "1px solid #E6E8EC"}}>
-                            <img src={crossCircle} alt="dollar" width="17px" height="17px" className="" />
-                            <p className="ml-2  my-auto">Remove from sale</p>
-                        </div>
-                        <div className="d-flex align-items-center " style={{paddingBottom: "14px", width: "100%" ,borderBottom: "1px solid #E6E8EC", color: "#EF466F"}}>
-                            <img src={crossFilled} alt="dollar" width="17px" height="17px" className="" style={{color: "#EF466F!important"}} />
-                            <p className="ml-2  my-auto">Burn token</p>
-                        </div>
-                        <div className="d-flex align-items-center " style={{paddingBottom: "14px", width: "100%" ,}}>
-                            <img src={report} alt="dollar" width="17px" height="17px" className="" />
-                            <p className="ml-2  my-auto">Report</p>
-                        </div>
-                    
-                </div>
+                
             </div>
         </>
     );
