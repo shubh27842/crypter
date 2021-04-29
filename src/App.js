@@ -6,7 +6,8 @@ import Footer from "./components/Footer";
 import Art from "./components/Pages/Art";
 import Item2 from "./components/Pages/Item2"
 import Item3 from "./components/Pages/Item3"
-import EditProfile from "./components/Pages/Profile/EditProfile"
+import EditProfile from "./components/Pages/Profile/EditProfile";
+import Profile from './components/Pages/Profile/Profile';
 import './App.css';
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
         <Route path="/2" exact component={Item2} />
         <Route path="/3" exact component={Item3} />
         <Route path="/editprofile" exact component={EditProfile} />
-
+        <Profile path="/profile" exact component={Profile} />
       </Switch>
       <Footer />
     </BrowserRouter>

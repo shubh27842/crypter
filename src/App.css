@@ -473,7 +473,7 @@
   border: 2px solid #E6E8EC;
   box-sizing: border-box;
   border-radius: 90px;
-  font-family: DM Sans;
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -483,13 +483,13 @@
 }
 .sideBtn{
   display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 12px;
-width: 48px;
-height: 48px;
-border-radius: 48px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
 
 }
 .ownerInfo{
@@ -895,6 +895,240 @@ border-radius: 48px;
   }
   .updateBtnBox{
     margin-top: 32px;
+  }
+}
+
+
+/* Profile*/
+
+.coverBox{
+  width: 100%;
+  height: 326px;
+  position: relative;
+}
+.coverBoxImg{
+  width: 100%;
+  height: 326px; 
+}
+.coverBtnBox{
+  z-index: 2;
+  display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+position: absolute;
+width: 321px;
+height: 40px;
+right: 159px;
+bottom: 32px;
+
+}
+.coverBtns{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  height: 40px;
+  border: 2px solid #777E91;
+  box-sizing: border-box;
+  border-radius: 90px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  color: #FCFCFD;
+  background: transparent;
+}
+
+.profileInfoBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  width: 256px;
+  height: 689px;
+  top: 0px;
+  background: #FCFCFD;
+  border: 1px solid #E6E8EC;
+  box-sizing: border-box;
+  box-shadow: 0px 40px 32px -24px rgba(15, 15, 15, 0.12);
+  border-radius: 16px;
+  position: absolute;
+  left: 165px;
+  top: 213px;
+}
+.caption{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #777E91;
+
+}
+.moreArtistBox{
+  width: 800px;
+  margin-left: 480px;
+  margin-top: 67px;
+}
+.subHeadsBtn{
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #777E91;
+  padding: 6px 12px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.subHeadsBtn:hover{
+  text-decoration: none;
+  color: #777E91;
+}
+.activeSubHead{
+  background: #353945;
+  border-radius: 100px;
+  color: #FCFCFD;
+}
+.artistCard{
+  width: 100%;
+  padding-bottom: 32px;
+  margin-top: 48px;
+  border-bottom: 1px solid #E6E8EC;
+}
+.artistProfilePic{
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+}
+.artistFollowBtn{
+  width: 67px;
+  height: 32px;
+  margin-top: 12px;
+}
+.artistFollowBtn2{
+  width: 83px;
+  height: 32px;
+  margin-top: 12px;
+  background: transparent;
+}
+.artistInfo{
+  margin-left: 20px;
+  width: 196px;
+}
+.artistImgBox{
+  margin-left: 24px;
+  width: 472px;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(270deg, #FCFCFD 0%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 50%, #FCFCFD 50%);
+ 
+}
+.artistProduct{
+  width: 112px;
+  height: 88px;
+  border-radius: 12px;
+}
+.loading{
+  margin: 48px auto 188px auto;
+}
+@media screen and (max-width: 1024px) {
+  .coverBtnBox{
+    right: 80px;
+  }
+  .profileInfoBox{
+    left: 80px;
+  }
+  .moreArtistBox{
+    margin-left: 384px;
+  }
+  .subHeadBtnBox{
+    width: 600px;
+  }
+  .subHeadsBtn{
+    margin-right: 15px;
+  }
+  .artistInfo{
+    width: 90px;
+  }
+  .artistCard{
+    
+  }
+  .artistImgBox{
+    background: none;
+  }
+  .loading{
+    margin: 50px auto 55px 270px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .coverBtnBox{
+    right: 8vw;
+    bottom: 56px;
+  }
+  .coverBox, .coverBoxImg{
+    height: 230px;
+  }
+  .profileInfoBox{
+    left: 32px;
+    top: 198px;
+    width: 311px;
+  }
+  .moreArtistBox{
+    width: 100%;
+    margin-top: 711px;
+    margin-left: 0;
+    margin-bottom: 64px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .subHeadBtnBox{
+    width: 100%;
+  }
+  .subHeadsBtn{
+    margin-right: 0;
+  }
+  .artistCard{
+    border-bottom: none;
+    margin-top: 32px;
+    padding-bottom: 0;
+  }
+  .artistImgBox{
+    display: none;
+  }
+  .artistInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .artistProfilePic{
+    
+  }
+  .artistFollowBtn{
+    width: 75px;
+    height: 40px;
+    margin-top: 0;
+    
+  }
+  .artistFollowBtn2{
+    width: 91px;
+    height: 40px;
+    margin-top: 0;
+    
+  }
+  .loading{
+    display: none!important;
   }
 }
 
